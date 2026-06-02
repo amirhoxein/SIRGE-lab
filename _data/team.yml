@@ -1,0 +1,49 @@
+leadership:
+  - name: "Dr. Mohammad Hossein Moattar"
+    title: "Director"
+    image: "/assets/images/team/dr-moattar.jpg"
+    profile_url: "/team/dr-moattar/"
+    description: "Leading clinical aspects of our research"
+
+  - name: "Dr. Faezeh Rohani"
+    title: "Clinical Validation Lead"
+    image: "/assets/images/team/dr-rohani.jpg"
+    profile_url: "/team/dr-rohani/"
+    description: "Leading clinical aspects of our research"
+
+team:
+  - name: "Amirhossein Saeedi"
+    title: "Developer"
+    image: "/assets/images/team/amirhossein-saeedi.jpg"
+    profile_url: "/team/amirhossein-saeedi/"
+    description: "AI team developer"
+
+  - name: "Setayesh Abdollahi"
+    title: "Developer"
+    image: "/assets/images/team/setayesh-abdollahi.jpg"
+    profile_url: "/team/setayesh-abdollahi/"
+    description: "AI team developer"
+
+  - name: "Fatemeh Farshchi"
+    title: "Developer"
+    image: "/assets/images/team/fatemeh-farshchi.jpg"
+    profile_url: "/team/fatemeh-farshchi/"
+    description: "AI team developer"
+
+  - name: "Mohammad Hossein Beheshti"
+    title: "Game designer"
+    image: "/assets/images/team/mohammad-hossein-beheshti.jpg"
+    profile_url: "/team/mohammad-hossein-beheshti/"
+    description: "Game development team"
+
+  - name: "Pouya Vafaee"
+    title: "Game designer"
+    image: "/assets/images/team/pouya-vafaee.jpg"
+    profile_url: "/team/pouya-vafaee/"
+    description: "Game development team"
+
+  - name: "Forough Nemati"
+    title: "R&D Lead"
+    image: "/assets/images/team/forough-nemati.jpg"
+    profile_url: "/team/forough-nemati/"
+    description: "R&D"

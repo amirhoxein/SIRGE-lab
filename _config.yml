@@ -1,0 +1,29 @@
+title: SIRGE Research Lab
+description: Medical Innovation Research in Artificial Intelligence
+
+baseurl: ""
+url: "https://amirhoxein.github.io/sirge-lab"
+
+collections:
+  members:
+    output: true
+    permalink: "/team/:name/"
+
+  publications:
+    output: true
+    permalink: "/publications/:name/"
+
+  projects:
+    output: true
+    permalink: "/projects/:name/"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "members"
+    values:
+      layout: "profile"
