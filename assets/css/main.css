@@ -1,69 +1,116 @@
-/* Main Styles */
+:root {
+  --primary: #7b1fa2;
+  --primary-dark: #4a148c;
+  --primary-light: #9c27b0;
+  --accent: #e040fb;
+  --dark: #1e1b2e;
+  --light: #ffffff;
+}
+
+/* Base */
 body {
   font-family: "Inter", system-ui, sans-serif;
 }
 
-.hero {
-  background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
-  color: white;
-  padding: 140px 0 100px;
+/* Navbar */
+.navbar {
+  background-color: var(--dark) !important;
 }
 
-/* Member Cards */
+/* Hero */
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--primary-dark) 100%
+  ) !important;
+  color: white;
+}
+
+/* Team Cards */
 .member-card {
   border: none;
   border-radius: 16px;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 20px rgba(123, 31, 162, 0.1);
 }
 
 .member-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 25px 50px rgba(123, 31, 162, 0.22);
 }
 
 .profile-img {
-  width: 155px;
-  height: 155px;
-  object-fit: cover;
-  border: 6px solid #ffffff;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  transition: transform 0.4s ease;
+  border: 6px solid #fff;
+  box-shadow: 0 10px 30px rgba(123, 31, 162, 0.25);
 }
 
-.member-card:hover .profile-img {
-  transform: scale(1.05);
+/* Buttons - Fix Active/Click State */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
-.card-body {
-  padding: 1.5rem 1rem 1.25rem;
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+  color: white !important;
 }
 
-.card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.35rem;
+.btn-outline-primary {
+  background-color: var(--light) !important;
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: var(--primary) !important;
+  color: white !important;
+  border-color: var(--primary) !important;
+}
+
+/* Fix text colors */
 .text-primary {
-  color: #0d6efd !important;
-  font-weight: 500;
+  color: var(--primary) !important;
+}
+
+/* Center Team Cards */
+#team-grid .row {
+  justify-content: center;
 }
 
 /* Section Titles */
-.section-title {
-  position: relative;
-  display: inline-block;
+.section-title:after {
+  background: var(--primary);
 }
 
-.section-title:after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 3px;
-  background: #0d6efd;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
+/* Navbar Hover Effect */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-toggle:hover {
+  color: var(--primary-light) !important;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #f3e8ff;
+  color: var(--primary) !important;
+}
+
+/* Publications & Projects Cards Alignment */
+.card.h-100 {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(123, 31, 162, 0.08);
+}
+
+.card.h-100:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(123, 31, 162, 0.15);
 }

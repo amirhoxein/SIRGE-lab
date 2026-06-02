@@ -1,6 +1,11 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1E1B2E;">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="/">SIRGE</a>
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="/">
+            <img src="/assets/images/logo/logo.svg" alt="SIRGE Lab" height="48" class="me-3">
+            <div>
+                <small class="text-light opacity-75" style="font-size: 0.85rem;">Medical AI Innovation Lab</small>
+            </div>
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -8,21 +13,45 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="/">Home</a>
-                <a class="nav-link" href="/team/">Team</a>
-                <a class="nav-link" href="/internship/">Internship</a>
+
+                <a class="nav-link" href="/">
+                    <i class="bi bi-house-door me-1"></i> Home
+                </a>
+
+                <a class="nav-link" href="/team/">
+                    <i class="bi bi-people-fill me-1"></i> Team
+                </a>
+
+                <a class="nav-link" href="/internship/">
+                    <i class="bi bi-mortarboard me-1"></i> Internship
+                </a>
 
                 <!-- Research Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Research
+                        <i class="bi bi-flask-fill me-1"></i> Research
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/projects/">Projects</a></li>
-                        <li><a class="dropdown-item" href="/publications/">Publications</a></li>
-                        <li><a class="dropdown-item" href="/openings/">Openings</a></li>
-                        <li><a class="dropdown-item" href="https://github.com/amirhoxein" target="_blank">GitHub
-                                Repositories</a></li>
+                        <li>
+                            <a class="dropdown-item" href="/projects/">
+                                <i class="bi bi-rocket-takeoff me-2"></i> Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/publications/">
+                                <i class="bi bi-journal-text me-2"></i> Publications
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="bi bi-briefcase me-2"></i> Openings
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://github.com/amirhoxein" target="_blank">
+                                <i class="bi bi-github me-2"></i> GitHub Repositories
+                            </a>
+                        </li>
                     </ul>
                 </li>
 

@@ -11,19 +11,24 @@ layout: default
 </div>
 
 <div class="container py-5">
-  <h2 class="mb-4">Recent Publications</h2>
+  <h2 class="text-center mb-5 section-title">Recent Publications</h2>
   
-  <div class="row">
+  <div class="row g-4">
     {% for pub in site.data.publications %}
-      <div class="col-lg-8 mx-auto mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5>{{ pub.title }}</h5>
+      <div class="col-lg-6 mb-4">
+        <div class="card h-100 d-flex flex-column">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{ pub.title }}</h5>
             <p class="text-muted">{{ pub.authors }} • {{ pub.year }}</p>
             <p><strong>{{ pub.journal | default: pub.conference }}</strong></p>
-            {% if pub.link %}
-              <a href="{{ pub.link }}" class="btn btn-primary btn-sm" target="_blank">Read Paper →</a>
-            {% endif %}
+            
+            <div class="mt-auto pt-3">
+              {% if pub.link %}
+                <a href="{{ pub.link }}" class="btn btn-outline-primary btn-sm px-4" target="_blank">
+                  Read Paper →
+                </a>
+              {% endif %}
+            </div>
           </div>
         </div>
       </div>
