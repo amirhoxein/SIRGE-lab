@@ -1,7 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1E1B2E;">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top"
+    style="background-color: #1E1B2E; box-shadow: 0 0px 24px rgba(0, 0, 0, 0.8);">
     <div class="container">
-        <a class="navbar-brand fw-bold d-flex align-items-center" href="/">
-            <img src="/assets/images/logo/logo.svg" alt="SIRGE Lab" height="48" class="me-3">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="{{ '/' | relative_url }}">
+            <img src="{{ '/assets/images/logo/logo.svg' | relative_url }}" alt="SIRGE Lab" height="48" class="me-3">
             <div>
                 <small class="text-light opacity-75" style="font-size: 0.85rem;">Medical AI Innovation Lab</small>
             </div>
@@ -14,15 +15,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav ms-auto">
 
-                <a class="nav-link" href="/">
+                <a class="nav-link" href="{{ '/' | relative_url }}">
                     <i class="bi bi-house-door me-1"></i> Home
                 </a>
 
-                <a class="nav-link" href="/team/">
+                <a class="nav-link" href="{{ '/team/' | relative_url }}">
                     <i class="bi bi-people-fill me-1"></i> Team
                 </a>
 
-                <a class="nav-link" href="/internship/">
+                <a class="nav-link" href="#">
                     <i class="bi bi-mortarboard me-1"></i> Internship
                 </a>
 
@@ -33,12 +34,12 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="/projects/">
+                            <a class="dropdown-item" href="{{ '/projects/' | relative_url }}">
                                 <i class="bi bi-rocket-takeoff me-2"></i> Projects
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/publications/">
+                            <a class="dropdown-item" href="{{ '/publications/' | relative_url }}">
                                 <i class="bi bi-journal-text me-2"></i> Publications
                             </a>
                         </li>

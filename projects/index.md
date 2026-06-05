@@ -17,7 +17,7 @@ layout: default
     {% for project in site.data.projects %}
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 d-flex flex-column">
-          <img src="{{ project.image }}" 
+          <img src="{{ project.image | relative_url }}" 
                class="card-img-top" 
                style="height: 200px; object-fit: cover;" 
                alt="{{ project.title }}">

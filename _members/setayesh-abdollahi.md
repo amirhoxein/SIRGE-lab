@@ -1,7 +1,7 @@
 ---
 name: Dr. Mohammad Hossein Moattar
 title: Director & Principal Investigator
-image: /assets/images/team/mohammad-hossein-moattar.jpg
+image: "/assets/images/team/setayesh-abdollahi.png"
 linkedin: https://linkedin.com/in/...
 email: moattar@sirge-lab.com
 ---

@@ -7,7 +7,9 @@ layout: default
   <div class="container">
     <h1 class="display-3 fw-bold mb-4">SIRGE Research Lab</h1>
     <p class="lead mb-4">Medical Innovation Research in Artificial Intelligence</p>
-    <a href="/team/" class="btn btn-outline-primary px-5 py-3 btn-lg">Meet Our Team →</a>
+    <a href="{{ '/team/' | relative_url }}" class="btn btn-outline-primary px-5 py-3 btn-lg">
+      Meet Our Team →
+    </a>
   </div>
 </div>
 

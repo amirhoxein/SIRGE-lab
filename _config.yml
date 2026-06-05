@@ -1,8 +1,8 @@
 title: SIRGE Research Lab
 description: Medical Innovation Research in Artificial Intelligence
 
-baseurl: ""
-url: "https://amirhoxein.github.io/sirge-lab"
+url: "https://amirhoxein.github.io"
+baseurl: "/SIRGE-lab"
 
 collections:
   members:

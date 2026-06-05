@@ -1,13 +1,14 @@
 <div class="col-md-4 col-lg-3 mb-4">
     <div class="card member-card h-100 text-center d-flex flex-column">
         <div class="card-body d-flex flex-column">
-            <img src="{{ include.image }}" class="profile-img rounded-circle mx-auto mb-3" alt="{{ include.name }}">
+            <img src="{{ include.image | relative_url }}" class="profile-img rounded-circle mx-auto mb-3"
+                alt="{{ include.name }}">
 
             <h5 class="card-title">{{ include.name }}</h5>
             <p class="text-primary mb-3">{{ include.title }}</p>
 
             <div class="mt-auto">
-                <a href="{{ include.profile_url }}" class="btn btn-outline-primary btn-sm px-4">
+                <a href="{{ include.profile_url | relative_url }}" class="btn btn-outline-primary btn-sm px-4">
                     View Profile →
                 </a>
             </div>
